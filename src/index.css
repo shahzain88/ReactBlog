@@ -1,0 +1,301 @@
+/* all style is here */
+
+/* declearing colors in variabls */
+:root{
+  /* we call this like var(--something) */
+  --border-botton-color:#e6e6e6;
+  --text-color:#404040;
+  --text-color-important:#fb7642;
+}
+
+/* Base style */
+*{
+  margin:0;
+  font-family: 'Courier New', monospace;
+  letter-spacing:1px;
+  color:var(--text-color);
+}
+.navbar{
+  padding:15px;
+  display:flex;
+  align-items:center;
+  max-width:600px;
+  margin: 0 auto;
+  border-bottom:1px solid var(--border-botton-color);
+}
+
+.navbar h1{
+  color:var(--text-color-important);
+}
+.navbar .navlinks{
+  margin-left:auto;
+}
+
+.navbar .navlinks a {
+  margin-left:15px;
+  text-decoration:none;
+  padding:15px;
+}
+.navbar .navlinks a:hover {
+  color:var(--text-color-important);
+}
+
+.navbar .navlinks a.btn-new-blog{
+  color: var(--border-botton-color);
+  background-color: var(--text-color-important);
+  border-radius: 15px;
+}
+
+.navbar .navlinks a.btn-new-blog:hover{
+  color:var(--text-color-important);
+  background-color: #ffffff;
+  border:3px solid var(--text-color-important);
+  border-radius: 15px;
+  /* the home link moves to left side */
+  /* the border has 3px line it expends  */
+  /* so we de expend padding the oposit side -3px of the base 15px  */
+  padding:12px; 
+  transition: color 1s;
+}
+.content{
+  max-width:600px;
+  margin:40px auto;
+  padding:22px;
+}
+
+
+/* style for blog-previwe */
+
+  /* in home.js component */
+  .Homepage .blogs .blog-previwe{
+    padding:10px 20px;
+    margin:20px 0;
+    border-bottom:1px solid var(--border-botton-color);
+  }
+
+          /* the Link componet will look cooler */
+  .Homepage .blogs .blog-previwe a{
+    text-decoration:none;
+  }
+  .Homepage .blogs .blog-previwe:hover{
+    box-shadow: 2px 4px 5px var(--border-botton-color);
+  }
+        /* h2 the title  */
+  .Homepage .blogs .blog-previwe h2{
+    font-size:20px;
+    color:#fb7642c1;
+    margin-bottom:8px;
+  }
+        /* p the author */
+  .Homepage .blogs .blog-previwe p{
+    text-align:right;
+  }
+
+
+  /* in BlogDetails.js component */
+  .blog-details .blog-previwe{
+    padding:10px 20px;
+    margin:20px 0;
+    border-bottom:1px solid var(--border-botton-color);
+  }
+  
+          /* the Link componet will look cooler */
+  .blog-details .blog-previwe a{
+    text-decoration:none;
+  }
+  .blog-details .blog-previwe:hover{
+    box-shadow: 2px 4px 5px var(--border-botton-color);
+  }
+        /* h2 the title  */
+  .blog-details .blog-previwe h2{
+    font-size:20px;
+    color:#fb7642c1;
+    margin-bottom:8px;
+  }
+        /* p the author */
+  .blog-details .blog-previwe p{
+    text-align:right;
+  }
+  .blog-details .blog-previwe div{
+    text-align:center;
+    margin:20px 0;
+  }
+  
+  .blog-details .blog-previwe button{
+    display:block;
+    font-size:13px;
+    margin:20px auto;
+    padding:7px;
+    color: var(--border-botton-color);
+    background-color: var(--text-color-important);
+    border-radius: 8px;
+    border:1px solid var(--text-color-important);
+  }
+    /* when hoverd */
+    .blog-details .blog-previwe button:hover{
+      font-size:15px;
+      /* because box moves a bit down */
+      margin:17px auto;
+    }
+  
+
+
+
+
+
+/* style for loading  */
+
+        /* homepage loding */
+.Homepage div.ispanding {
+  margin:100px auto;
+  font-size:40px;
+  color: var(--text-color-important);
+  text-align:center;
+  letter-spacing:2px;
+}
+        /* blog details loding*/
+.blog-details div.ispanding {
+  margin:100px auto;
+  font-size:40px;
+  color: var(--text-color-important);
+  text-align:center;
+  letter-spacing:2px;
+}
+
+/* style for error message in home component */
+
+
+        /* in home component */
+.Homepage div.error {
+  margin:100px auto;
+  font-size:40px;
+  text-align:center;
+  letter-spacing:2px;
+}
+
+        /* in blog details comopnent */
+.blog-details div.error {
+  margin:100px auto;
+  font-size:40px;
+  text-align:center;
+  letter-spacing:2px;
+}
+
+
+/* style for Create.js component */
+
+
+  .create {
+    margin:0 auto;
+    max-width:400px;
+    text-align:center;
+  }
+  .create form{
+    display:block;
+    width:100%;
+  } 
+  .create h2{
+    text-align:center;
+    color:var(--text-color-important);
+    font-size:20px;
+    margin-bottom:30px;
+  }
+
+  .create label{
+    text-align:left;
+    display:block;
+    margin-top:20px;
+
+  }
+
+  .create input, .create textarea, .create select{
+        /* sizeing */
+        margin:10px 0;
+        padding:15px;
+        /* the input and text-area are 32px bigger dkw */
+        width:calc(100% - 32px);
+        display:block;
+        /* shapeing */   /* coloring */
+        border:1px solid var(--text-color-important);
+        border-radius:5px;
+  }
+   /* when hovered */
+    .create input:hover, .create textarea:hover, .create select:hover{
+      /* shapeing */   /* coloring */
+      box-shadow: 2px 2px 2px var(--border-botton-color);
+    }
+  
+  .create select{
+    /* the input and text-area are 32px bigger dkw */
+    width:100%;
+  }
+
+  .create button{
+    display:block;
+    font-size:13px;
+    margin:20px auto;
+    padding:8px;
+    color: var(--border-botton-color);
+    background-color: var(--text-color-important);
+    border-radius: 8px;
+    border:1px solid var(--text-color-important);
+  }
+    /* when hoverd */
+    .create button:hover{
+      font-size:16px;
+    }
+
+
+
+  /* Style from 404 NotFound page */
+
+  .not-found{
+    text-align:center;
+    margin-top:40px;
+    letter-spacing:3px;
+    font-size:15px;
+  }
+  .not-found h2{
+    font-size:25px;
+    color:#fb7642c1;
+    margin-bottom:10px;
+  }
+
+  .not-found p{
+    margin:10px;
+  }
+  .not-found a{
+    text-decoration:none;
+    color:#fb7642c1;
+    padding:10px;
+    margin:10px;
+  }
+
+
+  /* style for MyWorks */
+  .my-works > h2{
+    text-align:center;
+  }
+  .my-works .my-work{
+    width:100%;
+    border:1px solid var(--border-botton-color);
+    padding:10px;
+    margin:0 auto;
+    margin-top:20px;
+    text-align:center;
+  }
+
+  .my-works .my-work a{
+    text-decoration:none;
+  }
+  .my-works .my-work h2{
+    color:#fb7642a7;
+    margin:10px auto;
+    font-size:20px;
+  }
+  .my-works .my-work p{
+    margin-bottom:10px;
+  }
+  .my-works .my-work img{
+    width:100%;
+  }

@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "my start on react.",
+      "body": "oh oh my love javascript i want you to help me more \n. but you are kind of hard to use in SPA.\n but it's ok we have react maid of you.\n we are so thankful\n",
+      "author": "Zain",
+      "id": 1
+    },
+    {
+      "title": "my start on python.",
+      "body": "oh oh my love Pyhton, I want you to help me more in beackend \n. but you are kind of hard to use in backend.\n but it's ok we have Django maid of you.\n we are so thankful\n",
+      "author": "ZainTwo",
+      "id": 2
+    }
+  ]
+}
