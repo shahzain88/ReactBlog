@@ -7,8 +7,8 @@ const Navbar = () => {
         <nav className="navbar" >
             <h1>_Al ZaIn Blog</h1>
             <div className="navlinks">
-                <Link to="/">Home</Link>
-                <Link to="/my-works">Work</Link>
+                <Link to="/blogs">Home</Link>
+                <Link to="/">Work</Link>
                 {/* Ex. of in line style in react */}
                 {/* add this to it*/}
                 {/*style={{

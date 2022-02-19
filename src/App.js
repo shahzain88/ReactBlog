@@ -11,7 +11,7 @@ function App() {
 
   return (
 
-    //BrowserRouter will make server like connection with browser.. 
+    //BrowserRouter will make server like connection with browser..
     <Router>
       <div className="App">
         {/* Navbar will show up on all web sites. because it is out side the Switch... */}
@@ -20,13 +20,17 @@ function App() {
           {/* Switch will onliy show only one Route at a time . it will switch betwwen them .  */}
           <Switch>
             {/* Route will take path this will be added to domane */}
+
             <Route exact path="/">
+              <MyWorks />
+            </Route>
+
+
+            <Route path='/blogs'>
               <Home />
             </Route>
 
-            <Route path='/my-works'>
-              <MyWorks />
-            </Route>
+
 
             <Route path="/create">
               <Create />
